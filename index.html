@@ -1,1 +1,22 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caléa</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;padding:40px;background:#f2ede4;color:#2c2218}
+nav{display:flex;gap:16px;margin-bottom:40px}
+a{color:#2c2218}
+.page{display:none}.page.active{display:block}
+</style>
+</head>
+<body>
+<nav><a href="#" onclick="showPage('home')">Home</a><a href="#" onclick="showPage('collaborate')">Collaborate</a></nav>
+<div class="page active" id="page-home"><h1>Caléa</h1><p>If this shows, GitHub Pages works.</p></div>
+<div class="page" id="page-collaborate"><h1>Collaborate</h1><p>Test page.</p></div>
+<script>
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+id).classList.add('active');}
+</script>
+</body>
+</html>z
